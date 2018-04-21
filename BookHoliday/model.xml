@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+    <properties/>
+    <struct>
+        <and abstract="true" mandatory="true" name="BookHoliday">
+            <and mandatory="true" name="Book Flight ">
+                <feature mandatory="true" name="SearchFlight"/>
+                <feature mandatory="true" name="BookingFlight"/>
+                <feature abstract="true" name="RegisterForFlight"/>
+            </and>
+            <and mandatory="true" name="Payment">
+                <feature mandatory="true" name="ValidateCreditCard"/>
+                <feature mandatory="true" name="PayOff"/>
+                <or abstract="true" name="Security">
+                    <feature abstract="true" name="HighSec"/>
+                    <feature abstract="true" name="NormalSec1"/>
+                </or>
+            </and>
+            <and abstract="true" name="BookHotel">
+                <description>
+bsb
+</description>
+                <feature mandatory="true" name="SearchHotel"/>
+                <feature mandatory="true" name="ReserveRoom"/>
+            </and>
+            <and abstract="true" name="AddServices">
+                <and mandatory="true" name="RentCar">
+                    <feature mandatory="true" name="SearchCar"/>
+                    <feature mandatory="true" name="DoCarRental"/>
+                    <feature abstract="true" name="Insurance"/>
+                </and>
+                <feature mandatory="true" name="BookEntertaiment"/>
+            </and>
+            <and mandatory="true" name="ReservationManagement">
+                <feature mandatory="true" name="Add,Modify"/>
+                <feature mandatory="true" name="Delete"/>
+            </and>
+        </and>
+    </struct>
+    <constraints/>
+    <calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+    <comments/>
+    <featureOrder userDefined="false"/>
+</featureModel>
