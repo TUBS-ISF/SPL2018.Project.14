@@ -5,7 +5,7 @@
         <and abstract="true" mandatory="true" name="BookHoliday">
             <and mandatory="true" name="Book Flight ">
                 <description>
-suchen nach den Flugticket dann buchen passende Ticekt 
+suchen nach den Flugticket dann buchen passende Ticekt
 </description>
                 <feature mandatory="true" name="SearchFlight"/>
                 <feature mandatory="true" name="BookingFlight"/>
@@ -21,10 +21,10 @@ bezahlen mit Kreditkare oder ..
 </description>
                 <feature mandatory="true" name="ValidateCreditCard"/>
                 <feature mandatory="true" name="PayOff"/>
-                <or abstract="true" name="Security">
+                <alt abstract="true" name="Security">
                     <feature abstract="true" name="HighSec"/>
                     <feature abstract="true" name="NormalSec1"/>
-                </or>
+                </alt>
             </and>
             <and abstract="true" name="BookHotel">
                 <description>
@@ -42,11 +42,11 @@ Rent Auto oder buchen verschidene Activity
                     <feature mandatory="true" name="DoCarRental"/>
                     <feature abstract="true" name="Insurance"/>
                 </and>
-                <feature mandatory="true" name="BookEntertaiment"/>
+                <feature name="BookEntertaiment"/>
             </and>
-            <and mandatory="true" name="ReservationManagement">
-                <feature mandatory="true" name="Add,Modify"/>
-                <feature mandatory="true" name="Delete"/>
+            <and hidden="true" mandatory="true" name="ReservationManagement">
+                <feature hidden="true" mandatory="true" name="Add,Modify"/>
+                <feature hidden="true" mandatory="true" name="Delete"/>
             </and>
         </and>
     </struct>
