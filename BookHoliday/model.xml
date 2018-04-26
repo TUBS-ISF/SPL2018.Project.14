@@ -4,11 +4,21 @@
     <struct>
         <and abstract="true" mandatory="true" name="BookHoliday">
             <and mandatory="true" name="Book Flight ">
+                <description>
+suchen nach den Flugticket dann buchen passende Ticekt 
+</description>
                 <feature mandatory="true" name="SearchFlight"/>
                 <feature mandatory="true" name="BookingFlight"/>
-                <feature abstract="true" name="RegisterForFlight"/>
+                <feature abstract="true" name="RegisterForFlight">
+                    <description>
+vor Buchungsticket soll sich anmelden
+</description>
+                </feature>
             </and>
             <and mandatory="true" name="Payment">
+                <description>
+bezahlen mit Kreditkare oder ..
+</description>
                 <feature mandatory="true" name="ValidateCreditCard"/>
                 <feature mandatory="true" name="PayOff"/>
                 <or abstract="true" name="Security">
@@ -18,12 +28,15 @@
             </and>
             <and abstract="true" name="BookHotel">
                 <description>
-bsb
+suchen nach den Zimmer dann buchen passendes Zimmer
 </description>
                 <feature mandatory="true" name="SearchHotel"/>
                 <feature mandatory="true" name="ReserveRoom"/>
             </and>
             <and abstract="true" name="AddServices">
+                <description>
+Rent Auto oder buchen verschidene Activity
+</description>
                 <and mandatory="true" name="RentCar">
                     <feature mandatory="true" name="SearchCar"/>
                     <feature mandatory="true" name="DoCarRental"/>
