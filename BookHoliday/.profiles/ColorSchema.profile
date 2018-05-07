@@ -1,0 +1,13 @@
+true
+Delete=Dark_Green
+ReserveRoom=Cyan
+RegisterForFlight=Red
+SearchHotel=Cyan
+PayOff=Orange
+RentCar=Yellow
+BookEntertaiment=Yellow
+SearchFlight=Red
+BookingFlight=Red
+Security=Orange
+Add,Modify=Dark_Green
+ValidateCreditCard=Orange

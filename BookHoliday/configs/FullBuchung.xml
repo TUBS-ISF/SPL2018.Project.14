@@ -8,8 +8,9 @@
     <feature automatic="selected" name="Payment"/>
     <feature automatic="selected" name="ValidateCreditCard"/>
     <feature automatic="selected" name="PayOff"/>
-    <feature automatic="selected" name="Security"/>
+    <feature automatic="selected" manual="selected" name="Security"/>
     <feature manual="selected" name="HighSec"/>
+    <feature automatic="unselected" name="NormalSec1"/>
     <feature manual="selected" name="BookHotel"/>
     <feature automatic="selected" name="SearchHotel"/>
     <feature automatic="selected" name="ReserveRoom"/>
@@ -18,7 +19,7 @@
     <feature automatic="selected" name="SearchCar"/>
     <feature automatic="selected" name="DoCarRental"/>
     <feature manual="selected" name="Insurance"/>
-    <feature automatic="selected" name="BookEntertaiment"/>
+    <feature manual="selected" name="BookEntertaiment"/>
     <feature automatic="selected" name="ReservationManagement"/>
     <feature automatic="selected" name="Add,Modify"/>
     <feature automatic="selected" name="Delete"/>

@@ -27,7 +27,6 @@ vor der Ticketsbeschtätigung soll Der Benutzer sich selbst anmelden
             <and mandatory="true" name="Payment">
                 <description>
 nach dem Tickensbuchen muss der Benutzer mit Kreditkare oder paypal dafür bezahlen.
-
 </description>
                 <feature mandatory="true" name="ValidateCreditCard"/>
                 <feature mandatory="true" name="PayOff"/>
