@@ -1,10 +1,17 @@
 package Book.Provider;
 
 import java.util.Scanner;
+
 import Book.Component.Flight;
 
 public class SearchFlight {
-
+ 
+	String FromCity;
+	String ToCity;
+	String StartTime;
+	String EndTime;
+	
+	
 
 	
 	public SearchFlight() {
@@ -13,11 +20,19 @@ public class SearchFlight {
 		Flight Flightinfo=new Flight();
 		
 		System.out.println("From City: ");
-		Flightinfo.setFromCity("knldfs");
+		FromCity=userInput.next();
+		
 		System.out.println("To City: ");
+		ToCity=userInput.next();
+		
 		System.out.println("Depart: (d/m/y) ");
+		StartTime=userInput.next();
+		
 		System.out.println("Return: (d/m/y) ");
-		System.out.println("Travels: ");
+		EndTime=userInput.next();
+		
+	
+		
 	}
 
 }
