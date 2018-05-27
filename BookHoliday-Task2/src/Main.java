@@ -4,7 +4,7 @@ import properties.PropertyManager;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		
+		//DWWW
 
 		if (PropertyManager.getProperty("BookEntertaiment")) {
 			System.out.println("Entertaiment schon gebucht.");
