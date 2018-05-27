@@ -16,11 +16,11 @@ public class Main {
 		  
 		 
 		 //#if SearchHotel
-//@		 System.out.println("2. Search Hotel: ");
+		 System.out.println("2. Search Hotel: ");
 		//#endif  
 		 
 		 //#if RentCar
-//@		 System.out.println("3. Rent Car or Book Entermaint: ");
+		 System.out.println("3. Rent Car or Book Entermaint: ");
 			//#endif
 		//#if Payment
 		 System.out.println("4. Make Payment");
