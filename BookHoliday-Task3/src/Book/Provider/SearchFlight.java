@@ -31,7 +31,22 @@ public class SearchFlight {
 		System.out.println("Return: (d/m/y) ");
 		EndTime=userInput.next();
 		
+		Flightinfo.setFromCity(FromCity);
+		Flightinfo.setToCity(ToCity);
+		Flightinfo.setStartTime(StartTime);
+		Flightinfo.setEndTime(EndTime);
 	
+		
+		
+	
+		
+	}
+
+
+
+
+	private void While(boolean b) {
+		// TODO Auto-generated method stub
 		
 	}
 
