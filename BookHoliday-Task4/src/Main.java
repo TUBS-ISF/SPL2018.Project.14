@@ -1,12 +1,26 @@
+import java.io.IOException;
+import java.util.List;
 import java.util.Scanner;
 
+import Book.Component.Flight;
 import Book.Provider.*;
 import Book.customer.*;
+import Interfaces.*;
+import loader.PluginLoader;
 
 
 public class Main {
+	
+	
+	
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		
+		List<iSearch> Fluginf = PluginLoader.load(iSearch.class);
+		setInfo(Fluginf, true);
+		
+		
+	
 	
 	System.out.println("  ---------------- Wellcome to Holiday Booking ---------------------- ");
 	 while(true) {
@@ -77,5 +91,23 @@ public class Main {
 		}
 		 
 
-
+	private static void setInfo( List<iSearch> Fluginf, Boolean bla) {
+	Flight flight=new Flight();
+	
+	for(iSearch search : Fluginf) {
+		switch(search.getFlugType())
+		{
+		case FirstClass:
+			flight.setCarrierName("FirstClass");
+			break;
+			
+		case Economy:
+			flight.setCarrierName("Economy");
+			break;
+		}
 	}
+
+}
+	
+	}
+	

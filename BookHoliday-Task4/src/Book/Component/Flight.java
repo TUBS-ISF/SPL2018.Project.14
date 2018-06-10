@@ -24,7 +24,7 @@ public class Flight {
 	}
 
 	public void setCarrierName(String carrierName) {
-		this.carrierName = carrierName;
+		this.carrierName = carrierName ;
 	}
 
 	public String getFlightName() {
