@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <feature automatic="selected" name="BookHoliday"/>
+    <feature automatic="selected" name="Book Flight "/>
+    <feature automatic="selected" name="SearchFlight"/>
+    <feature automatic="selected" name="BookingFlight"/>
+    <feature automatic="selected" name="Payment"/>
+    <feature automatic="selected" name="ValidateCreditCard"/>
+    <feature automatic="selected" name="PayOff"/>
+    <feature automatic="selected" name="Security"/>
+    <feature manual="selected" name="HighSec"/>
+    <feature manual="selected" name="BookHotel"/>
+    <feature automatic="selected" name="SearchHotel"/>
+    <feature automatic="selected" name="ReserveRoom"/>
+    <feature automatic="selected" name="AddServices"/>
+    <feature manual="selected" name="RentCar"/>
+    <feature automatic="selected" name="SearchCar"/>
+    <feature automatic="selected" name="DoCarRental"/>
+    <feature automatic="selected" name="BookEntertaiment"/>
+    <feature automatic="selected" name="ReservationManagement"/>
+    <feature automatic="selected" name="Add,Modify"/>
+    <feature automatic="selected" name="Delete"/>
+</configuration>
