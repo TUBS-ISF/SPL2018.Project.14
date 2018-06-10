@@ -3,6 +3,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import Book.Component.Flight;
+import Book.Component.Hotel;
 import Book.Provider.*;
 import Book.customer.*;
 import Interfaces.*;
@@ -18,6 +19,9 @@ public class Main {
 		
 		List<iSearch> Fluginf = PluginLoader.load(iSearch.class);
 		setInfo(Fluginf, true);
+		
+		List<iHotel> Hotelinf = PluginLoader.load(iHotel.class);
+		setHotelInfo(Hotelinf, true);
 		
 		
 	
@@ -108,6 +112,24 @@ public class Main {
 	}
 
 }
+	
+	private static void setHotelInfo( List<iHotel> Hotelinf, Boolean bla) {
+		Hotel hotel= new Hotel();
+		
+		for(iHotel search : Hotelinf) {
+			switch(search.getHotelType())
+			{
+			case Lux:
+				hotel.setHotelType("Lux");
+				break;
+				
+			case Economy:
+				hotel.setHotelType("Economy");
+				break;
+			}
+		}
+
+	}
 	
 	}
 	
